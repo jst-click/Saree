@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hera Alankar — Handpicked Silk Sarees</title>
+  <meta name="description" content="Hera Alankar — luxury silk sarees with zari borders, contrast pallus, and timeless craftsmanship." />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="gold-line" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Hera Alankar home">
+        <img src="images/logo.png" alt="Hera Alankar logo" class="brand-mark" width="48" height="48" />
+        <span class="brand-text">Hera Alankar</span>
+      </a>
+
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="#collections">Collections</a>
+        <a href="#shop">Shop</a>
+        <a href="#craft">Craft</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="phone-link" href="tel:7090121198" aria-label="Call 7090121198">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 3.7c0-.6.4-1 1-1H7c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z" fill="currentColor"/></svg>
+          <span>7090121198</span>
+        </a>
+        <button type="button" class="icon-btn cart-toggle" id="cartToggle" aria-label="Open cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 7h14l-1.5 9H8.5L7 7zm0 0L6 4H3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.2" fill="currentColor"/><circle cx="17" cy="20" r="1.2" fill="currentColor"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button type="button" class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-mobile" id="mobileNav" aria-label="Mobile" hidden>
+    <a href="#collections">Collections</a>
+    <a href="#shop">Shop</a>
+    <a href="#craft">Craft</a>
+    <a href="#contact">Contact</a>
+    <a class="wa-btn" href="https://wa.me/917090121198" target="_blank" rel="noopener">WhatsApp Order</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img src="images/saree-05.jpg" alt="" class="hero-img" />
+        <div class="hero-veil"></div>
+      </div>
+      <div class="hero-content">
+        <img src="images/logo.png" alt="Hera Alankar" class="hero-logo reveal" />
+        <h1 class="hero-brand reveal delay-1">Hera Alankar</h1>
+        <p class="hero-tagline reveal delay-2">Silk sarees woven for celebrations that linger.</p>
+        <div class="hero-cta reveal delay-3">
+          <a class="btn btn-gold" href="#shop">Explore Sarees</a>
+          <a class="btn btn-ghost" href="https://wa.me/917090121198" target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections" id="collections">
+      <div class="section-head">
+        <p class="eyebrow">Curated lines</p>
+        <h2>Collections</h2>
+        <p class="section-lead">From temple silks to soft florals — each piece chosen for colour, border, and drape.</p>
+      </div>
+      <div class="collection-rail">
+        <article class="collection-tile" data-filter="silk">
+          <img src="images/saree-01.jpg" alt="Silk butta sarees" />
+          <div class="collection-meta">
+            <h3>Silk Butta</h3>
+            <p>Classic body motifs with rich contrast borders</p>
+          </div>
+        </article>
+        <article class="collection-tile" data-filter="zari">
+          <img src="images/saree-16.jpg" alt="Zari border sarees" />
+          <div class="collection-meta">
+            <h3>Zari Borders</h3>
+            <p>Ornate gold work for festive evenings</p>
+          </div>
+        </article>
+        <article class="collection-tile" data-filter="contrast">
+          <img src="images/saree-13.jpg" alt="Contrast border sarees" />
+          <div class="collection-meta">
+            <h3>Contrast Pallu</h3>
+            <p>Bold colour pairings in jewel tones</p>
+          </div>
+        </article>
+        <article class="collection-tile" data-filter="softy">
+          <img src="images/saree-06.jpg" alt="Soft cotton sarees" />
+          <div class="collection-meta">
+            <h3>Soft Cottons</h3>
+            <p>Light drapes for everyday elegance</p>
+          </div>
+        </article>
+        <article class="collection-tile" data-filter="patola">
+          <img src="images/saree-14.jpg" alt="Heritage print sarees" />
+          <div class="collection-meta">
+            <h3>Heritage Print</h3>
+            <p>Checks, blocks &amp; traditional motifs</p>
+          </div>
+        </article>
+        <article class="collection-tile" data-filter="floral">
+          <img src="images/saree-08.jpg" alt="Floral designer sarees" />
+          <div class="collection-meta">
+            <h3>Designer Florals</h3>
+            <p>Modern cuts with embroidered blooms</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="section-head">
+        <p class="eyebrow">Ready to drape</p>
+        <h2>Shop Sarees</h2>
+        <p class="section-lead">Dummy catalogue for this demo — tap WhatsApp to enquire about any piece.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter by collection">
+        <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="silk">Silk Butta</button>
+        <button type="button" class="filter-btn" data-filter="zari">Zari</button>
+        <button type="button" class="filter-btn" data-filter="contrast">Contrast</button>
+        <button type="button" class="filter-btn" data-filter="softy">Soft Cotton</button>
+        <button type="button" class="filter-btn" data-filter="patola">Heritage</button>
+        <button type="button" class="filter-btn" data-filter="floral">Floral</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="craft" id="craft">
+      <div class="craft-visual">
+        <img src="images/saree-16.jpg" alt="Close look at yellow magenta zari saree" />
+      </div>
+      <div class="craft-copy">
+        <p class="eyebrow">The Hera promise</p>
+        <h2>Colour, border, and a finish that feels ceremonial.</h2>
+        <p>Hera Alankar brings together silk buttas, peacock-inspired richness, and contrast borders that catch the light. Every piece in this demo reflects the jewel tones and gold zari language of our collections.</p>
+        <ul class="craft-points">
+          <li>Temple-inspired contrast borders</li>
+          <li>Soft drape for all-day wear</li>
+          <li>Festive zari &amp; butta detailing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-panel">
+        <img src="images/logo.png" alt="" class="contact-logo" width="88" height="88" />
+        <h2>Talk to us</h2>
+        <p>Call or WhatsApp for availability, blouse stitching, and custom shade requests.</p>
+        <a class="contact-phone" href="tel:7090121198">7090121198</a>
+        <div class="contact-actions">
+          <a class="btn btn-gold" href="https://wa.me/917090121198" target="_blank" rel="noopener">WhatsApp Now</a>
+          <a class="btn btn-navy" href="tel:7090121198">Call Store</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Hera Alankar" width="40" height="40" />
+        <div>
+          <strong>Hera Alankar</strong>
+          <span>Luxury silk sarees · Demo storefront</span>
+        </div>
+      </div>
+      <p class="footer-note">© 2026 Hera Alankar. Demo website for showcase purposes.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+    <div class="cart-head">
+      <h2>Your Bag</h2>
+      <button type="button" class="icon-btn" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <a class="btn btn-gold btn-block" id="whatsappCheckout" href="https://wa.me/917090121198" target="_blank" rel="noopener">Checkout on WhatsApp</a>
+      <button type="button" class="text-btn" id="clearCart">Clear bag</button>
+    </div>
+  </aside>
+  <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+
+  <div class="product-modal" id="productModal" hidden>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <img id="modalImage" src="" alt="" />
+      <div class="modal-body">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <p class="modal-price" id="modalPrice"></p>
+        <button type="button" class="btn btn-gold" id="modalAdd">Add to Bag</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
